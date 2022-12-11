@@ -10,7 +10,7 @@ public class Game {
 
     public Game() {
         this.stage = 0;
-        this.targetWord = "Hello";
+        this.targetWord = "polymorphism";
         this.isStarted = false;
         this.currentGuess = "*****";
     }
@@ -53,6 +53,7 @@ public class Game {
 
     public void startOver() {
         this.stage = 0;
+        this.targetWord = FileReader.pickWord();
         this.resetCurrentGuess();
         this.isStarted = true;
 

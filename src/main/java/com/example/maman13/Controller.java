@@ -140,7 +140,7 @@ public class Controller implements Initializable {
         GridPane newGrid = new GridPane();
         newGrid.setId("charGrid");
         for (int i = 0; i < hangedManInstance.getTargetWord().length(); i++) {
-            newGrid.getColumnConstraints().add(new ColumnConstraints(50));
+            newGrid.getColumnConstraints().add(new ColumnConstraints(40));
             Label l = new Label();
             l.setMinWidth(25);
             l.setStyle("-fx-border-style:solid  ;  -fx-border-width:0 0 2 0 ;-fx-border-color: black;");
